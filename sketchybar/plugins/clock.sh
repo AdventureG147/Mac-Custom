@@ -1,0 +1,10 @@
+#!/bin/sh
+
+# The $NAME variable is passed from sketchybar and holds the name of
+# the item invoking this script:
+# https://felixkratz.github.io/SketchyBar/config/events#events-and-scripting
+
+sketchybar --set "$NAME" label="$(date '+%a %d %b %I:%M:%S %p')"
+
+# a = day, d = date, b = month, I = hour (12hr), M = minute, S = second, p = AM / PM
+
